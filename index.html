@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Icone -->
+  <link rel="shortcut icon" href="./assets/images/user-solid.svg" type="image/svg">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fim font -->
+  <script src="https://kit.fontawesome.com/177f0e37f6.js" crossorigin="anonymous"></script>
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+  <h1 class="titulo">Login</h1>
+  <div class="container">
+    <!-- Registro -->
+    <div class="registro">
+      <form class="form">
+        <input class="digitar" type="text" name="user" placeholder="Username" required />
+        <input class="digitar" type="email" name="mail" placeholder="E-Mail" required />
+        <input class="digitar" type+"password" name="senha" placeholder="Senha" required />
+        <div class="container-termo">
+          <input class="termo" id="termo" type="checkbox" name="termos" required />
+          <label for="termo">Li e aceito os <a href="#">termos de uso</a></label>
+        </div>
+        <input class="botao" type="submit" value="Registrar" />
+      </form>
+    </div>
+    <!-- Login -->
+    <div class="login">
+      <form class="form">
+        <input class="digitar" type="text" name="user" placeholder="Username" required />
+        <input class="digitar" type="password" name="senha" placeholder="Senha" required />
+        <a class="esqueceu" href="#">Esqueceu a senha?</a>
+        <input class="botao" type="submit" value="Entrar" />
+        <div class="opcao">
+          <a class="google" href="#"><i class="fab fa-google"></i>Google</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

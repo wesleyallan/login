@@ -1,0 +1,169 @@
+:root {
+  --cor-padrao: #089047;
+  --mar-top: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  outline: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121214;
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  font-size: 50px;
+  position: relative;
+  color: #7b7b7d;
+  margin-bottom: var(--mar-top);
+}
+.titulo::before {
+  content:"";
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  display: inline-block;
+  width: 53px;
+  height: 7px;
+  background-color: var(--cor-padrao);
+}
+
+/* Container */
+
+.container {
+  max-width: 960px;
+  background-color: #202024;
+  border-radius: 10px;
+  display: flex;
+}
+
+/* Login e Registro */
+.login,
+.registro {
+  padding: 60px;
+}
+
+/* Padrao Form */
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  color: #7b7b7d;
+  position: relative;
+}
+.digitar {
+  width: 100%;
+  height: 50px;
+  background-color: #121214;
+  border-radius: 5px;
+  border: 2px solid #121214;
+  transition: border 0.2s ease 0s;
+  color: white;
+  padding-left: 20px;
+}
+.form .digitar + .digitar {
+  margin-top: var(--mar-top);
+}
+.digitar:focus {
+  border-color: var(--cor-padrao);
+}
+.form .esqueceu {
+  margin-top: var(--mar-top);
+  text-decoration: none;
+  color: inherit;
+}
+.form .esqueceu:hover {
+  color: var(--cor-padrao);
+}
+.form .botao {
+  background: rgba(8,144,71,.5);
+  margin-top: var(--mar-top);
+  border-radius: 5px;
+  height: 50px;
+  border: 0;
+  color: #eee; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.form .botao:hover {
+  background-color: var(--cor-padrao);
+  color: #fff;
+}
+.form .opcao {
+  border-top: 2px solid #29292e; 
+  margin-top: var(--mar-top);
+}
+.form .google {
+  margin-top: var(--mar-top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #121214;
+  height: 50px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+.form .google i {
+  color: var(--cor-padrao);
+  margin-right: 5px;
+  transition: color 0.2s ease;
+}
+.form .google:hover {
+  color: #fff;
+  background-color: var(--cor-padrao);
+}
+.form .google:hover i {
+  color: #fff; 
+}
+.termo {
+  margin-top: var(--mar-top);
+}
+.container-termo a {
+  text-decoration: none;
+  color: #7b7b7d;
+}
+.container-termo a:hover {
+  color: var(--cor-padrao);
+}
+
+/* Divisoria */
+.login {
+  border-left: 2px solid #29292e; 
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  .container {
+    flex-flow: column wrap;
+  }
+  .login {
+  border-left: none;
+  border-top: 2px solid #29292e; 
+  }
+}
+@media (max-width: 370px) {
+  .container {
+    flex-flow: column wrap;
+  }
+  .login {
+  border-left: none;
+  border-top: 2px solid #29292e; 
+  }
+  .login,
+  .registro {
+    padding: 30px;
+  }
+}
