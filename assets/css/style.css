@@ -127,7 +127,14 @@ body {
 .form .google:hover i {
   color: #fff; 
 }
-.termo {
+
+/* Divisoria */
+.login {
+  border-left: 2px solid #29292e; 
+}
+
+/* Estilo Checkbox */
+.container-termo {
   margin-top: var(--mar-top);
 }
 .container-termo a {
@@ -138,9 +145,30 @@ body {
   color: var(--cor-padrao);
 }
 
-/* Divisoria */
-.login {
-  border-left: 2px solid #29292e; 
+.form .termo {
+  display: none;
+}
+
+.form input + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #121214;
+  border: 1px solid #121214;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  transition: background .1s ease-out;
+}
+
+.form .termo:checked + label:before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--cor-padrao);
+  background-position: center;
+  border: none;
+  padding: 1px;
 }
 
 /* Responsividade */
