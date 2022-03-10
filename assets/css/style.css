@@ -16,15 +16,20 @@ body {
   background-color: #121214;
   font-family: 'Fira Code', monospace;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+.container-titulo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mar-top);
 }
 .titulo {
   font-size: 50px;
   position: relative;
   color: #7b7b7d;
-  margin-bottom: var(--mar-top);
 }
 .titulo::before {
   content:"";
@@ -172,26 +177,22 @@ body {
 }
 
 /* Responsividade */
-
-@media (max-width: 700px) {
+@media (max-width: 630px) {
   .container {
     flex-flow: column wrap;
   }
   .login {
-  border-left: none;
-  border-top: 2px solid #29292e; 
+    border-left: none; 
+    border-top: 2px solid #29292e; 
   }
 }
-@media (max-width: 370px) {
-  .container {
-    flex-flow: column wrap;
-  }
-  .login {
-  border-left: none;
-  border-top: 2px solid #29292e; 
+
+@media (max-width: 410px) {
+  .form input {
+    min-width: 180px;
   }
   .login,
   .registro {
-    padding: 30px;
+    padding: 60px calc((100vw - 180px) / 2);
   }
 }
