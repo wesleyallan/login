@@ -179,11 +179,11 @@ body {
 /* Responsividade */
 @media (max-width: 630px) {
   .container {
-    flex-flow: column wrap;
+    flex-flow: column-reverse;
   }
   .login {
     border-left: none; 
-    border-top: 2px solid #29292e; 
+    border-bottom: 2px solid #29292e; 
   }
 }
 
