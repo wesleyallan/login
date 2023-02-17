@@ -1,4 +1,7 @@
-<h1 align="center">Bem Vindo ao Login 👋</h1>
+<h1 align="center">
+  <img src="./hi.gif" alt="Mão acenando" width="30px" />
+  Bem Vindo ao Login
+</h1>
 <p align="center">
   📃 Front-end para página de login construido com HTML, CSS e JavaScript nativo
 </p>
@@ -24,7 +27,9 @@
 
 ### ✨ [Página](https://wesleyallan.github.io/login)
 
-## Instalar
+<br />
+
+## 📨 Instalar
 
 Projeto simples com HTML e CSS puro, ou seja, assim não havendo necessidade de instalações extras.
 
@@ -32,7 +37,7 @@ Projeto simples com HTML e CSS puro, ou seja, assim não havendo necessidade de 
 git clone https://github.com/wesleyallan/login.git
 ```
 
-## Executar
+## ⚙️ Executar
 
 Para a execução do projeto basta haver um browser instalado, e abrir o arquivo `index.html`, seja por linha de comando ou pelo atalho `Ctrl + O` com o browser aberto.
 
@@ -41,14 +46,14 @@ cd login
 [browser] index.html
 ```
 
-## Autor
+## 👤 Autor
 
-👤 **Wesley Silva**
+**Wesley Silva**
 
-- Website: https://wesleyallan.github.io/mypage
+- Website: [wesleyallan.dev](https://wesleyallan.dev)
 - Twitter: [@Wesley_AllanS](https://twitter.com/Wesley_AllanS)
 - Github: [@wesleyallan](https://github.com/wesleyallan)
-- LinkedIn: [@wwesleyallan](https://linkedin.com/in/wesleyallan)
+- LinkedIn: [@wesleyallan](https://linkedin.com/in/wesleyallan)
 
 ## Mostre seu apoio
 
